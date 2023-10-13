@@ -48,10 +48,10 @@ O aplicativo estará disponível em http://localhost:5173.
 
 ## **Etapas Front-end📋**
 1 - Tela Inicial
-![image](./telas/step-01.png)
+![image](./telas/tela1.png)
 
 2 - Tela de Cadastro
-![image](./telas/step-02.png)
+![image](./telas/tela2.png)
 
 ## Tecnologias Utilizadas
 
