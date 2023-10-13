@@ -34,7 +34,7 @@ export function Home() {
     <div>
       <DateTabs data={employee} activeDate={activeDate} setActiveDate={setActiveDate} />
       <SortOptions sortOrder={sortOrder} handleSortChange={handleSortChange} />
-      <EmployeeList data={employee} activeDate={activeDate} />
+      <EmployeeList data={employee} activeDate={activeDate} setActiveDate={setActiveDate} />
     </div>
   );
 }

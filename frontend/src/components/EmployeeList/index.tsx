@@ -11,12 +11,14 @@ interface Employee {
 interface EmployeeListProps {
   data: Employee[];
   activeDate: string;
+  setActiveDate: (date: string) => void;
 }
 
-const EmployeeList = ({ data, activeDate }: EmployeeListProps) => {
-  const filteredEmployees = data.filter((employee) => {
-    console.log('employee.date:', employee.date);
-    console.log('activeDate:', activeDate);
+const EmployeeList = ({ data, activeDate ,setActiveDate }: EmployeeListProps) => {
+  const filteredEmployees = data && data.filter((employee) => {
+    if(activeDate == '') {
+      setActiveDate(employee.date)
+    }
     return employee.date === activeDate;
   });
 
